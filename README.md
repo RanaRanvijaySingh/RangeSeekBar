@@ -66,3 +66,5 @@ public class MainActivity extends Activity implements OnRangeChangeListener{
 
 
 ![](https://cloud.githubusercontent.com/assets/4836122/8495752/96369dd2-218d-11e5-8bd6-a7cda0aa068f.png)
+
+![](https://cloud.githubusercontent.com/assets/4836122/8495991/61d4dbce-218f-11e5-8fb1-2b85ad777e0b.png)
