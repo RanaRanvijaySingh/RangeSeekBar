@@ -35,12 +35,13 @@ In your xml file you need to add `xmlns:custom="http://schemas.android.com/apk/r
         custom:thumb_image="@drawable/ic_slider"
         custom:thumb_image_max="@drawable/ic_slider"/>
 ```
-Now to get the call back in your java code, you have `OnClickSegmentButton` interface.  
+Now to get the call back in your java code, you have `OnRangeChangeListener` interface.  
 You need to implement this interface in your class.  
-**OnClickSegmentButton** interface provides one function `onButtonSelected`.  
+**OnRangeChangeListener** interface provides one function `setRangeChangeListener`.  
 The Parameters are   
          * view - View object       : Individual button that you have clicked.  
-         * position - int           : Position of the button in the segment that is clicked.  
+         * minPosition - double     : Position of the min-thumb.  
+         * maxPosition - double     : Position of the max-thumb.  
 
 ```
 
