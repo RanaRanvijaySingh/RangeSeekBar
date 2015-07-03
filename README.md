@@ -22,17 +22,18 @@ Library provide 4 simple attributes in XML file :
 4. Once *Segment* library is added you can start coding.
 
 ###Sample
-In your xml file you need to add `xmlns:custom="http://schemas.android.com/apk/res/com.segment"` with parent layout.  
+In your xml file you need to add `xmlns:custom="http://schemas.android.com/apk/res-auto"` with parent layout.  
 ```
-    <com.segment.Segment
-        android:id="@+id/segment"
-        android:layout_width="match_parent"
+       <com.rana.rangeseekbar.RangeSeekbar
+        android:id="@+id/rangeSeekBar"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:count="4"
-        app:segmentColor="@color/blue"
-        app:text="Android,iphone,sencha,me"
-        app:textSize="12sp"
-        app:textColor="@color/white" />
+        custom:bar_color="#88c14c"
+        custom:bar_height="4dp"
+        custom:background_color="#3c3f41"
+        custom:selected_bar_color="#e77e2c"
+        custom:thumb_image="@drawable/ic_slider"
+        custom:thumb_image_max="@drawable/ic_slider"/>
 ```
 Now to get the call back in your java code, you have `OnClickSegmentButton` interface.  
 You need to implement this interface in your class.  
