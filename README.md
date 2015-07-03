@@ -5,7 +5,7 @@ RangeSeekbar as name suggests gives you a seekbar with two thumb for minimum and
 That's it.
 
 ###Features
-Library provide 4 simple attributes in XML file :
+Library provide 6 simple attributes in XML file :
 
 1. **background_color**   : Define color for background.
 2. **bar_color**          : Define color for default bar.
@@ -13,13 +13,6 @@ Library provide 4 simple attributes in XML file :
 4. **bar_height**         : Give bar height.
 5. **thumb_image**        : Set image for thumb both min-thumb  and max-thumb. 
 6. **thumb_image_max**    : Set image for max-thumb different from min thumb.
-
-###Instructions 
-
-1. Download or clone this repo.
-2. Import *Segment* library in your IDE.
-3. Right click on your **project** >>> select **Properties** >>> **Android** >>> inside Library section >>> click **Add** >>> and select **Segment**.
-4. Once *Segment* library is added you can start coding.
 
 ###Sample
 In your xml file you need to add `xmlns:custom="http://schemas.android.com/apk/res-auto"` with parent layout.  
