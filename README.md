@@ -4,6 +4,16 @@
 RangeSeekbar as name suggests gives you range between two thumb position ie. minimum and maximum value.
 That's it.
 
+###Screenshots
+
+![](https://cloud.githubusercontent.com/assets/4836122/8495398/057f39ae-218b-11e5-844d-923a2655f6df.png)
+
+
+![](https://cloud.githubusercontent.com/assets/4836122/8495752/96369dd2-218d-11e5-8bd6-a7cda0aa068f.png)
+
+
+![](https://cloud.githubusercontent.com/assets/4836122/8495991/61d4dbce-218f-11e5-8fb1-2b85ad777e0b.png)
+
 ###Features
 Library provide 6 simple attributes in XML file :
 
@@ -59,13 +69,3 @@ public class MainActivity extends Activity implements OnRangeChangeListener{
 
 ### Version
 1.0
-
-###Screenshots
-
-![](https://cloud.githubusercontent.com/assets/4836122/8495398/057f39ae-218b-11e5-844d-923a2655f6df.png)
-
-
-![](https://cloud.githubusercontent.com/assets/4836122/8495752/96369dd2-218d-11e5-8bd6-a7cda0aa068f.png)
-
-Accuracy up to 2 decimal position
-![](https://cloud.githubusercontent.com/assets/4836122/8495991/61d4dbce-218f-11e5-8fb1-2b85ad777e0b.png)
