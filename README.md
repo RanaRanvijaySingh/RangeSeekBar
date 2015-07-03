@@ -1,0 +1,73 @@
+# RangeSeekBar
+
+##Introduction
+RangeSeekbar as name suggests gives you a seekbar with two thumb for minimum and maximum value.
+That's it.
+
+###Features
+Library provide 4 simple attributes in XML file :
+
+1. **background_color**   : Define color for background.
+2. **bar_color**          : Define color for default bar.
+3. **selected_bar_color** : Define color for the range bar connecting two thumbs.
+4. **bar_height**         : Give bar height.
+5. **thumb_image**        : Set image for thumb both min-thumb  and max-thumb. 
+6. **thumb_image_max**    : Set image for max-thumb different from min thumb.
+
+###Instructions 
+
+1. Download or clone this repo.
+2. Import *Segment* library in your IDE.
+3. Right click on your **project** >>> select **Properties** >>> **Android** >>> inside Library section >>> click **Add** >>> and select **Segment**.
+4. Once *Segment* library is added you can start coding.
+
+###Sample
+In your xml file you need to add `xmlns:custom="http://schemas.android.com/apk/res/com.segment"` with parent layout.  
+```
+    <com.segment.Segment
+        android:id="@+id/segment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:count="4"
+        app:segmentColor="@color/blue"
+        app:text="Android,iphone,sencha,me"
+        app:textSize="12sp"
+        app:textColor="@color/white" />
+```
+Now to get the call back in your java code, you have `OnClickSegmentButton` interface.  
+You need to implement this interface in your class.  
+**OnClickSegmentButton** interface provides one function `onButtonSelected`.  
+The Parameters are   
+         * view - View object       : Individual button that you have clicked.  
+         * position - int           : Position of the button in the segment that is clicked.  
+
+```
+
+public class MainActivity extends Activity implements OnRangeChangeListener{
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        RangeSeekbar rangeSeekbar = (RangeSeekbar)findViewById(R.id.rangeSeekBar);
+        rangeSeekbar.setOnRangeListener(this);
+    }
+
+    @Override
+    public void setRangeChangeListener(View view, double minPosition, double maxPosition) {
+      //view - lets you access whole custom view for RangeSeekBar
+      //minPosition - gives values us to 2 decimal position for better accuracy. eg. 12.13
+      //maxPosition - goes the same as minPosition
+    }
+}
+```
+
+### Version
+1.0
+
+###Screenshots
+
+![](https://cloud.githubusercontent.com/assets/4836122/6802305/45de62de-d255-11e4-9a17-1f01d8f89708.png)
+
+
+![](https://cloud.githubusercontent.com/assets/4836122/6802306/45e69fa8-d255-11e4-8ede-4f40cb674409.png)
