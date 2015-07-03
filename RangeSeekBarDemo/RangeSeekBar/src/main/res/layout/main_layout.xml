@@ -1,0 +1,45 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+    <View
+        android:id="@+id/viewBaseLine"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_height="10dp"
+        android:background="@drawable/seek_view" />
+
+    <View
+        android:id="@+id/viewLineSelected"
+        android:layout_width="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="10dp"
+        android:background="@drawable/seek_view_selected" />
+
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="10dp"
+        android:background="@drawable/seek_view" />
+
+
+    <ImageView
+        android:id="@+id/ivMinThumb"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_slider"
+        android:scaleType="fitXY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/ivMaxThumb"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_slider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>
