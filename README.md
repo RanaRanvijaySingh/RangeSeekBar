@@ -1,7 +1,7 @@
 # RangeSeekBar
 
 ##Introduction
-RangeSeekbar as name suggests gives you a seekbar with two thumb for minimum and maximum value.
+RangeSeekbar as name suggests gives you range between two thumb position ie. minimum and maximum value.
 That's it.
 
 ###Features
