@@ -1,10 +1,10 @@
 # RangeSeekBar
 
-##Introduction
+## Introduction
 RangeSeekbar as name suggests gives you range between two thumb position ie. minimum and maximum value.
 That's it.
 
-###Screenshots
+### Screenshots
 
 ![](https://cloud.githubusercontent.com/assets/4836122/8495398/057f39ae-218b-11e5-844d-923a2655f6df.png)
 
@@ -14,7 +14,7 @@ That's it.
 
 ![](https://cloud.githubusercontent.com/assets/4836122/8495991/61d4dbce-218f-11e5-8fb1-2b85ad777e0b.png)
 
-###Features
+### Features
 Library provide 6 simple attributes in XML file :
 
 1. **background_color**   : Define color for background.
@@ -24,7 +24,7 @@ Library provide 6 simple attributes in XML file :
 5. **thumb_image**        : Set image for thumb both min-thumb  and max-thumb. 
 6. **thumb_image_max**    : Set image for max-thumb different from min thumb.
 
-###Sample
+### Sample
 In your xml file you need to add `xmlns:custom="http://schemas.android.com/apk/res-auto"` with parent layout.  
 ```
        <com.rana.rangeseekbar.RangeSeekbar
